@@ -1,0 +1,26 @@
+/*------------------------------------------------------*/
+/*                      GRAFICOS!                       */
+/*------------------------------------------------------*/
+
+.graphs-div {
+  display: flex;
+  flex-wrap: wrap;/*
+  margin-right: em;*/
+  width: 100%;
+}
+
+.graphs-div h4 {
+  width:100%;
+}
+
+.nvd3-chart{
+  margin-right: 3px;
+  margin-bottom: 3px;
+  min-height: 35vh;
+  padding: .3em;
+  height: 27vw;
+  min-width: 50vh;
+  width: 48%;
+  border: solid 2px rgba($color-primary, .5);
+  border-radius: 5px;
+}

@@ -1,0 +1,26 @@
+/*------------------------------------------------------*/
+/*                      MAIN                            */
+/*------------------------------------------------------*/
+#aplicacionDeReportes{
+  width: 100vw;
+  min-height: 100%;
+  position: relative;
+  color: darken($color-tertiary, 15%);
+}
+
+.rep-main-section{
+  padding: 1em 1em 1em 11em;
+  background-color: #fff;
+  /*background-color: $color-tertiary;*/
+  min-height: 100vh;
+  position: relative;
+}
+
+.linea-separadora-hor {
+  width: 90%;
+  margin: 2em auto;
+  text-align: center;
+  border-radius: 1em;
+  border-top: solid 4px $color-tertiary;
+}
+

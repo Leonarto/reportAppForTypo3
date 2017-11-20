@@ -1,0 +1,122 @@
+/*------------------------------------------------------*/
+/*                    FILTRO FECHAS                     */
+/*------------------------------------------------------*/
+
+.filtro-fecha-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+  }
+
+  h4 {
+    font-weight: 400;
+    margin-bottom: 2em;
+  }
+
+  input {
+    width: 90%;
+    margin: 0;
+    border-bottom-right-radius: .3em;
+    border-top-right-radius: .3em;
+    border-top: solid 2px #5b845c;
+    border-right: solid 2px #5b845c;
+    border-bottom: solid 2px #5b845c;
+    border-left: none;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, Arial, Verdana;
+    color: #1e3205;
+  }
+}
+
+.filtros-rapidos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  & > div {
+    width: 45%;
+  }
+}
+
+.filtro-fecha-rango {
+  width:100%;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .3em;
+  }
+
+}
+
+.input-group-calendar {
+  display: flex;
+  width: 80%;
+
+  & > span {
+    width: 9%;
+    margin: 0;
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: rgba(255,255,255,.8);
+    vertical-align: center;
+    border-bottom-left-radius: .3em;
+    border-top-left-radius: .3em;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    & > span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+
+/* FILTRO FECHAS BTN*/
+input.btn-reporte-fechas {
+  border: solid 1px darken($color-primary,10%);
+  background-color: $color-primary;
+  color: #fff;
+  padding: .3em 3em;
+  margin-top: 1em;
+  width: 100%;
+}
+
+input.btn-reporte-fechas:hover {
+  border: solid 1px $color-primary;
+  background-color: darken($color-primary,10%);
+  color: #fff;
+}
+
+/* FAENA SELECT EN FECHAS */
+
+.filtros-group-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: .5em;
+  margin: .7em 0;
+  border: solid 2px rgba(0,80,0,.2);
+  border-radius: .5em;
+}
+
+.tipo-faena-div,
+.faena-div{
+  display: flex;
+  width: 48%;
+  flex-wrap: wrap;
+  margin-top: .7em;
+}
+.tipo-faena-div label,
+.faena-div label{
+  margin-right: 1em;
+}

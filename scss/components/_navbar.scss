@@ -1,0 +1,53 @@
+/*------------------------------------------------------*/
+/*                       NAVBAR                         */
+/*------------------------------------------------------*/
+
+.rep-navbar-main{
+  position: absolute;
+  height: 100%;
+  width: 10em;
+  background-color: $color-primary;
+  border-right: solid 1px lighten($color-primary, 5%);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  z-index:1;
+  color: rgba(255,255,255,.8);
+}
+
+.rep-navbar-main h4{
+  padding-top: .5em;
+  padding-bottom: .5em;
+  text-align: center;
+  font-weight: 400;
+  /*background: rgba(0,0,0,.52);*/
+  background: $color-tertiary;
+  border-bottom: solid 1px $color-tertiary;
+  box-shadow: $shadow;
+}
+
+#navbar-btn-container{
+  /*  margin-top: 2em;*/
+}
+.rep-menu-btn {
+  padding-top: .2em;
+  padding-bottom: .2em;
+  text-align: center;
+  border: solid 1px darken($color-primary, 2%);
+  @include shadow(.1,1px);
+  @include transitionAll();
+}
+.rep-menu-btn:hover {
+  background-color: $color-secondary;
+  border: solid 1px lighten($color-secondary, 10%);
+  cursor: pointer;
+}
+
+.rep-menu-btn.active {
+  background-color: $color-tertiary;
+  border: solid 1px lighten($color-tertiary, 10%);
+}
+
+.rep-menu-btn.active:hover {
+  background-color: darken($color-tertiary, 10%);
+  border: solid 1px darken($color-tertiary, 15%);
+  cursor: pointer;
+}

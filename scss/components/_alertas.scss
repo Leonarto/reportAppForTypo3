@@ -1,0 +1,14 @@
+/*------------------------------------------------------*/
+/*                     ALERTAS                          */
+/*------------------------------------------------------*/
+
+.rep-alert {
+  margin-top: -1em;
+  margin-left: -1em;
+}
+
+.alert-success{
+  background-color: lighten($color-primary, 10%);
+  color: white;
+  border-color: lighten($color-primary, 20%);
+}

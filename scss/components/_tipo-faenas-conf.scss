@@ -1,0 +1,176 @@
+
+/*------------------------------------------------------*/
+/*                TIPO FAENAS CONF                      */
+/*------------------------------------------------------*/
+
+.tipos-faenas-conf-container h4{
+  margin-left: 1em;
+  margin-top: .5em;
+  font-weight: 400;
+}
+
+#tipos-faenas-cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.tipo-faena-conf-card{
+  min-width: 20em;
+  min-height: 15em;
+  margin: 1em;
+  padding-bottom: .7em;
+  color: #333333;
+}
+
+.tipo-faena-conf-card-header {
+  background-color: lighten($color-tertiary, 10%);
+  padding: .5em 0;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+  @include shadow();
+}
+
+.tipo-faena-conf-card-body {
+  background-color: lighten($color-tertiary, 35%);
+  height: 90%;
+  padding: .5em 0;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.tipo-faena-conf-card h4{
+  margin:0;
+  text-align: center;
+}
+
+.tipo-faena-card-campo{
+  display: flex;
+  justify-content: space-between;
+  padding: .2em .5em;
+  border: solid 1px rgba(0,0,0,.05)
+}
+.tipo-faena-card-campo label{
+  margin-right: .5em;
+  font-weight: 400;
+}
+
+.tf-card-campo-input{
+  min-width: 1em;
+  max-width: 2.5em;
+  border: solid 2px #597045;
+  border-radius: .3em;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+  text-align: center;
+}
+
+.tipo-faena-campos-headers {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: .95em;
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.nu-header-container {
+  margin-left: auto;
+  position: relative;
+}
+
+/********************* CONF BUTTONS *******************/
+
+#conf-btn-container{
+  display: inline-flex;
+}
+
+#conf-btn-container > div {
+  margin-right: .3em;
+}
+
+#fecha-btn-container{
+  display: inline-flex;
+}
+
+#fecha-btn-container > div {
+  margin-right: .3em;
+}
+
+
+/*************HELP BTN**************/
+
+.conf-help-btn{
+  position:relative;
+  background: lighten($color-tertiary, 20%);
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  color: #8b3323;
+  border-radius: 50%;
+  @include shadow(.1,2px);
+}
+
+.conf-help-btn:hover {
+  background: $color-tertiary;
+  color: rgba(255,255,255,.8);
+  cursor: pointer;
+}
+
+.conf-help-text{
+  padding: 1em;
+  top: -1em;
+  left: -1em;
+  width: 30em;
+  position: absolute;
+  background-color: $color-primary;
+  color: rgba(255,255,255,.8);
+  font-size: .65em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+  z-index: 1;
+}
+
+.conf-help-text * {
+  pointer-events: none;
+}
+
+.conf-help-text h4{
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.conf-help-text p{
+  text-align: justify;
+}
+
+/*************CONF BTNS**************/
+
+.conf-btn{
+  color: darken($color-tertiary, 15%);
+  position: relative;
+}
+
+.conf-btn:hover {
+  color: darken($color-tertiary, 15%);
+  cursor: pointer;
+}
+
+.conf-btn-text {
+  position: absolute;
+  bottom: 1.7em;
+  left: 1.5em;
+  background-color: $color-primary;
+  color: white;
+  font-size: .55em;
+  padding: .2em;
+  border-radius: .3em;
+  text-align: center;
+  z-index: 1;
+}
+
+/*************SAVE BTN**************/
+
+
+/*************EXCEL BTN**************/
+

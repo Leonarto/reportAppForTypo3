@@ -1,0 +1,10 @@
+@mixin transitionAll($time: .4s){
+  -webkit-transition: $time;
+  -moz-transition: $time;
+  -o-transition: $time;
+  transition: $time;
+}
+
+@mixin shadow($opacy: .1, $pixels: 1px){
+  box-shadow: $pixels $pixels $pixels rgba(0,0,0,$opacy);
+}
